@@ -244,3 +244,7 @@ initials.sort();
 let societyName = initials.join("");
 // 2- Afficher le nom final de la société secrète
 console.log(societyName); 
+
+
+
+// 'init learning'

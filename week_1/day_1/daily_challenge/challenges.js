@@ -66,3 +66,71 @@ for (let i = 1; i <= 6; i++) {
 
 // 3- Challenge en autonomie (sans aide externe)
 // "I did 95% of the exercise on my own"
+
+
+
+
+// Créer un fichier HTML structuré relié à un fichier JS
+
+// Écrire une fonction JavaScript qui prend un paramètre : myAge
+
+// Dans la fonction, afficher dans la console l’âge de ma mère et de mon père
+
+// Ma mère a le double de mon âge
+
+// Mon père a 1,2 fois l’âge de ma mère
+
+// Appeler la fonction
+
+
+// function calculerAgesParents(myAge) {
+//     // Calcul de l'âge de la mère (double)
+//     let mamanAge = myAge * 2;
+
+//     // Calcul de l'âge du père (1,2 fois l'âge de la mère)
+//     let papaAge = mamanAge * 1.2;
+
+//     // Affichage dans la console
+//     console.log("Mon âge : " + myAge + " ans");
+//     console.log("L'âge de ma mère est : " + mamanAge + " ans");
+//     console.log("L'âge de mon père est : " + papaAge + " ans");
+// }
+
+// calculerAgesParents(30);
+
+// function userInfo(userName, userAge) {
+//     if (userName === "Sarah") {
+//         let result = "Hey " + userName;
+//         return result;
+//     } else {
+//         return "You are not the right person";
+//     }
+// }
+
+// let girlInfo = userInfo("Tarik", 22);
+// console.log(girlInfo); //Hey Sarah
+
+
+
+// Exercice 2
+
+// Créer un fichier HTML structuré relié à un fichier JS
+
+// Écrire une fonction JavaScript qui prend un paramètre : myAge
+
+// Dans la fonction, retourner l’âge de ma mère (elle a le double de mon âge)
+
+// Appeler la fonction
+
+// Dans le scope global, afficher le résultat avec console.log
+
+
+// function monAge (myAge) {
+//   let motherAge = (myAge * 2);
+
+//   return motherAge;
+// }
+
+// let resultat = monAge(30);
+
+// console.log("L'age de ma mère est : " + resultat);
