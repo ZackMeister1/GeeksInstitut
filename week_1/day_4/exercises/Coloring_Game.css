@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#colors {
+  display: grid;
+  grid-template-columns: repeat(6, 40px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(16, 25px);
+  grid-template-rows: repeat(16, 25px);
+  gap: 1px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.square {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
