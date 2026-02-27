@@ -1,0 +1,60 @@
+<!-- Exercice 1 : HTML form (GET)  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form - GET</title>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+
+    <!-- 
+    method="GET" → les données seront envoyées dans l'URL
+    action="" → recharge la même page
+    -->
+
+    <form method="GET" action="">
+        
+        <!-- Small text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+        <!-- Larger textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Send">
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+<!--  Exercise 2 : HTML Form (POST)  -->
+
+<form method="POST" action="">
+        
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Send">
+
+</form>

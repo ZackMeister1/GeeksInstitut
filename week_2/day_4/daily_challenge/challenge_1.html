@@ -1,0 +1,96 @@
+<!-- Daily challenge : HTML form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form to JSON</title>
+</head>
+<body>
+
+    <!-- FORM -->
+
+    <form id="userForm">
+        <label>
+            Name:
+            <input type="text" id="name" required>
+        </label>
+
+        <br><br>
+
+        <label>
+            Last Name:
+            <input type="text" id="lastname" required>
+        </label>
+
+        <br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <hr>
+
+    <!-- Where JSON will appear -->
+    <div id="output"></div>
+
+    <!-- JS -->
+
+    <script>
+
+        // On récupère le formulaire
+        const form = document.getElementById("userForm");
+
+        form.addEventListener("submit", function(event) {
+
+            // Empêche le rechargement de la page
+            event.preventDefault();
+
+            // Récupération des valeurs
+            const nameValue = document.getElementById("name").value;
+            const lastNameValue = document.getElementById("lastname").value;
+
+            // Création de l'objet JS
+            const userObject = {
+                name: nameValue,
+                lastname: lastNameValue
+            };
+
+            // Conversion en JSON string
+            const jsonString = JSON.stringify(userObject);
+
+            // Ajout dans le DOM
+            document.getElementById("output").textContent = jsonString;
+
+        });
+
+    </script>
+
+</body>
+</html>
+
+
+
+<!-- 
+Explication rapide 
+On crée un formulaire HTML avec deux inputs
+On écoute l’événement "submit"
+
+On utilise event.preventDefault() pour éviter le rechargement
+
+On récupère les valeurs des inputs
+
+On crée un objet JavaScript
+
+On transforme l’objet en JSON avec : JSON.stringify()
+
+On affiche le JSON dans le DOM
+
+Résultat attendu
+Si on écrit :
+
+Name => John
+Last Name => Doe
+
+Le navigateur affichera : {"name":"John","lastname":"Doe"}
+
+-->
