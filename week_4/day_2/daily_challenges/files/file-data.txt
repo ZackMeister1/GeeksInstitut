@@ -1,0 +1,3 @@
+This is a file inside the Node.js project.
+Learning file system is powerful!
+

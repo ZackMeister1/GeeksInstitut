@@ -1,0 +1,23 @@
+# Dossiers à ignorer
+node_modules/
+
+# Fichiers sensibles
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+tmp/
+temp/
+
+# Dossiers de build (si j'ajoute plus tard)
+dist/
+build/
+

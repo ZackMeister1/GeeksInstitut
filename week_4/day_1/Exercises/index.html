@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giphy Explorer • Cherche des GIFs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-950 min-h-screen text-white">
+  
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-12">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-gif text-5xl text-yellow-400"></i>
+        <h1 class="text-4xl font-bold tracking-tighter">Giphy Explorer</h1>
+      </div>
+      <!-- <p class="text-white/70 text-sm">Powered by Giphy API • Fetch + Async/Await</p> -->
+    </div>
+
+    <!-- Ce div est pour l'exercise 3 -->
+  <!-- <div style="margin-top: 30px;">
+    <h2 style="color:white;">🚀 Starship Info</h2>
+    <div id="starship" style="color:white;"></div>
+  </div> -->
+
+
+    <!-- Barre de recherche -->
+    <div class="max-w-2xl mx-auto mb-12">
+  <form id="searchForm" class="relative">
+    
+    <input 
+      type="text" 
+      id="searchInput"
+      placeholder="Recherche un GIF... (ex: hilarious, cat, success)"
+      class="w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl px-8 py-6 text-lg focus:outline-none focus:border-yellow-400 transition-all placeholder:text-white/50"
+    >
+
+    <button type="submit"
+      class="absolute right-3 top-1/2 -translate-y-1/2 bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-semibold px-8 py-4 rounded-3xl transition-all flex items-center gap-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>Search</span>
+    </button>
+
+  </form>
+</div>
+
+    <!-- Zone de résultats -->
+    <div id="results" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <!-- Les GIFs apparaissent ici dynamiquement -->
+    </div>
+
+    <!-- Message de chargement / erreur -->
+    <div id="loading" class="hidden text-center py-20">
+      <i class="fa-solid fa-spinner fa-spin text-4xl text-yellow-400"></i>
+      <p class="mt-4 text-white/70">Chargement des GIFs...</p>
+    </div>
+
+    <div id="error" class="hidden text-center py-20 text-red-300">
+      <i class="fa-solid fa-circle-exclamation text-4xl"></i>
+      <p id="errorMessage" class="mt-4"></p>
+    </div>
+  </div>
+
+  <script src="./js/exercises.xp.js"></script>
+</body>
+</html>
+

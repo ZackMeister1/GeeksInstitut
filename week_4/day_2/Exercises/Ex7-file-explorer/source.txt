@@ -1,0 +1,4 @@
+Hello Node.js FS module!
+This is a test file.
+
+This is the moment that we all waiting for HAHAHA
