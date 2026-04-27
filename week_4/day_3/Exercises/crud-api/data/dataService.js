@@ -2,6 +2,7 @@
 
 // Objective: Create a simple Express server that fetches data from an external API using Axios, organized through a separate data module
 
+
 // Import axios
 const axios = require('axios');
 
