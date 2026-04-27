@@ -3,7 +3,7 @@
 
 // === 1. Fonction pour récupérer un GIF aléatoire ===
 async function getRandomGif(category) {
-const API_KEY = "PAST YOUR API KEY HERE";
+const API_KEY = "PAST API KEY HERE";
   const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${encodeURIComponent(category)}`;
 
 

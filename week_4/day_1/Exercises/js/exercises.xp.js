@@ -1,7 +1,7 @@
 // GIPHY EXPLORER - Projet d'apprentissage Fetch API + Async/Await
 
 // === CONFIGURATION ===
-const API_KEY = "xBrijLwPOaMg8vcs07RzlzxJ0fm2DK3V"; // ←←← Remplace par clé Giphy !!!
+const API_KEY = "CLÉ_API_ICI"; // ←←← Remplace par clé Giphy !!!
 const BASE_URL = "https://api.giphy.com/v1/gifs/search";
 
 // Variables globales pour l'apprentissage
@@ -117,8 +117,8 @@ function showError(message) {
 
 // Lancement automatique avec l'exemple de l'exercice
 window.onload = () => {
-  if (API_KEY === "TA_CLÉ_API_ICI") {
-    alert("Veuillez remplacer 'TA_CLÉ_API_ICI' par ta vraie clé Giphy !!!");
+  if (API_KEY === "CLÉ_API_ICI") {
+    alert("Veuillez remplacer 'CLÉ_API_ICI' par ta vraie clé Giphy !!!");
     return;
   }
 
